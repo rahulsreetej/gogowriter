@@ -60,7 +60,7 @@ export function WriterSpace({ isOpen, onToggle }: WriterSpaceProps) {
               className="resize-none p-4 text-stone-700 text-sm rounded-md border bg-white border-stone-200 h-72 lg:h-60 focus:outline-none focus:ring-2 focus:ring-pink-300 focus:border-transparent placeholder:text-stone-400"
             />
             <div className="text-right mt-2 text-xs text-stone-400">
-              Nothing is saved. It's just for your peace 🌿
+             <p>Nothing is saved. It&apos;s just for your peace 🌿</p>
             </div>
           </CardContent>
         </Card>
