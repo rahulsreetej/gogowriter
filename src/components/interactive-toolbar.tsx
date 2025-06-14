@@ -1,9 +1,5 @@
 "use client"
 
-import { Droplets, Scissors, Calendar } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
-
 interface InteractiveToolbarProps {
   onWater: () => void
   onPrune: () => void

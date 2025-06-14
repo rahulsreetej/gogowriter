@@ -5,12 +5,7 @@ import { Navbar } from "@/components/navbar"
 import { BackgroundScene } from "@/components/background-scene"
 import { WriterSpace } from "@/components/writerspace"
 
-export interface GrowthEntry {
-  day: number
-  action: string
-  timeOfDay: string
-  timestamp: Date
-}
+
 
 export interface GameState {
   currentDay: number
@@ -39,18 +34,7 @@ export default function BonsaiZenPage() {
     return "night"
   }
 
-  const addGrowthEntry = (action: string) => {
-    const timeOfDay = getTimeOfDay(currentTime)
-    const newEntry: GrowthEntry = {
-      day: gameState.currentDay,
-      action,
-      timeOfDay,
-      timestamp: new Date(),
-    }
 
-    // You can store or use this entry if needed later
-    console.log("New growth entry:", newEntry)
-  }
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-stone-50 to-stone-100 relative overflow-hidden">
